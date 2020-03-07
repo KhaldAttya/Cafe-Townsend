@@ -2,11 +2,11 @@
   "name": "cafe-townsend",
   "version": "1.0.0",
   "description": "",
-  "main": "conf.js",
+  "main": "./conf/conf.js",
   "scripts": {
-    "debug": "node --inspect-brk ./node_modules/.bin/protractor conf.js",
+    "debug": "node --inspect-brk ./node_modules/.bin/protractor ./conf/conf.js",
     "pretest": "npm run webdriver-update",
-    "test": "protractor conf.js",
+    "test": "protractor ./conf/conf.js",
     "webdriver-update": "webdriver-manager update --standalone=false --gecko=false"
   },
   "repository": {
@@ -18,6 +18,8 @@
   "bugs": {
     "url": "https://github.com/KhaldAttya/Cafe-Townsend/issues"
   },
-  "homepage": "https://github.com/KhaldAttya/Cafe-Townsend#readme"
+  "homepage": "https://github.com/KhaldAttya/Cafe-Townsend#readme",
+  "devDependencies": {
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0"
+  }
 }
-
