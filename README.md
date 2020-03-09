@@ -29,3 +29,13 @@ npm test
 ```
 Tests by default will execute on chrome, make sure it's installed. the report will be generated on repot/ folder to view open index.html file.
 
+## Test automation approach
+* Protractor was choosed as the web application under test is an angular app so protractor will be most of value between different frameworks
+
+* Page object model was used to make code reusable and tests readable.
+
+* I made an e2e scenario to cover the most critical test cases as it keywords
+
+* Used a clean test data approch to add user and delete it after tests are executed
+
+* Used jasmine reported for protractor to generate html report with screenshots to make debugging easy
